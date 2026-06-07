@@ -258,7 +258,8 @@ nav .menu-btn{display:none;background:none;border:none;font-size:24px;cursor:poi
   transition:transform 0.4s;
 }
 .gallery-grid .gal-item:hover img{transform:scale(1.05)}
-.gallery-grid .gal-item .gal-placeholder{
+.gallery-grid .gal-label{position:absolute;bottom:8px;left:8px;background:rgba(0,0,0,0.5);backdrop-filter:blur(4px);padding:4px 10px;border-radius:6px;color:#fff;font-size:10px;font-weight:600;letter-spacing:0.5px}
+.gal-item .gal-placeholder{
   width:100%;height:100%;display:flex;align-items:center;justify-content:center;
   font-size:32px;color:rgba(45,36,36,0.1);
   background:linear-gradient(135deg,var(--cream),var(--warm));
@@ -501,34 +502,19 @@ footer a{color:var(--gold);text-decoration:none}
 
     <div class="gallery-grid">
       <div class="gal-item fade-up">
-        <img src="https://images.unsplash.com/photo-1534081333815-ae5019106622?w=600&q=80" alt="Marokkanischer Tee" loading="lazy">
+        <img src="mouss-assets/mouss_shop_ghassen.jpg" alt="Mouss — Eingang" loading="lazy" style="object-position:center 20%">
+        <div class="gal-label">🧿 Eingang</div>
       </div>
       <div class="gal-item fade-up">
-        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" alt="Marokkanisches Essen" loading="lazy">
+        <img src="mouss-assets/mouss_shop_2.jpg" alt="Mouss — Innen" loading="lazy" style="object-position:center 30%">
+        <div class="gal-label">🪑 Innen</div>
       </div>
       <div class="gal-item fade-up">
-        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80" alt="Restaurant Interior" loading="lazy">
-      </div>
-      <div class="gal-item fade-up">
-        <img src="https://images.unsplash.com/photo-1534081333815-ae5019106622?w=600&q=80" alt="Marokkanischer Mint Tee" loading="lazy">
-      </div>
-      <div class="gal-item fade-up">
-        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" alt="Marokkanisches Essen" loading="lazy">
-      </div>
-      <div class="gal-item fade-up">
-        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80" alt="Restaurant Interior" loading="lazy">
-      </div>
-      <div class="gal-item fade-up">
-        <img src="mouss-assets/mouss_shop_3.jpg" alt="Mouss — Interior" loading="lazy" style="object-position:center 20%">
-      </div>
-      <div class="gal-item fade-up">
-        <img src="mouss-assets/mouss_shop_ghassen.jpg" alt="Mouss Shop — Eingang" loading="lazy" style="object-position:center top">
-      </div>
-      <div class="gal-item fade-up">
-        <img src="mouss-assets/mouss_shop_2.jpg" alt="Mouss Shop — Innenansicht" loading="lazy" style="object-position:center 20%">
+        <img src="mouss-assets/mouss_shop_3.jpg" alt="Mouss — Interior" loading="lazy" style="object-position:center 25%">
+        <div class="gal-label">☕ Atmosphäre</div>
       </div>
     </div>
-    <p style="text-align:center;margin-top:16px;color:var(--text);font-size:13px">📸 6/6 — Galerie komplett! Schick gern mehr Bilder für Abwechslung 🤳</p>
+    <p style="text-align:center;margin-top:16px;color:var(--text);font-size:13px">📸 Nur deine echten Fotos — keine Stock-Bilder! Schick gern mehr 🤳</p>
   </div>
 </section>
 
