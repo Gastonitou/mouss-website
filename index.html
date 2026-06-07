@@ -76,9 +76,8 @@ nav .menu-btn{display:none;background:none;border:none;font-size:24px;cursor:poi
 .hero::before{
   content:'';
   position:absolute;inset:0;
-  background:url('https://gz0.googleusercontent.com/gpms-cs-s/ABJJf50s_ZCYL_rxqTE213zELWy4nBvyROONLdONyz1xT4cwZr54CWeeoHG4mNf9k2GDKghdol6FBNYjP-i2XLx8eGS2RXjbbXufpElmkIsJgpXba4m1V5sMarq5m3o9S4KEMVDiQ56MRFUEmXYa=w1600-k-no') center/cover no-repeat;
-  opacity:0.2;
-  filter:blur(3px);
+  background:url('mouss-assets/mouss_shop_ghassen.jpg') center 20%/cover no-repeat;
+  opacity:0.35;
 }
 .hero::after{
   content:'';
@@ -200,7 +199,16 @@ nav .menu-btn{display:none;background:none;border:none;font-size:24px;cursor:poi
 }
 
 /* ============ MENU ============ */
-.menu-section{background:#fff}
+.menu-section{
+  position:relative;
+  background:#fff;
+}
+.menu-section::before{
+  content:'';
+  position:absolute;inset:0;
+  background:url('mouss-assets/mouss_shop_2.jpg') center 30%/cover no-repeat;
+  opacity:0.04;
+}
 .menu-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
@@ -298,11 +306,15 @@ nav .menu-btn{display:none;background:none;border:none;font-size:24px;cursor:poi
 .cta{
   text-align:center;padding:100px 20px;
   position:relative;overflow:hidden;
-  background:linear-gradient(160deg,var(--brand),var(--brand-dark));
 }
 .cta::before{
   content:'';position:absolute;inset:0;
-  background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background:url('mouss-assets/mouss_shop_3.jpg') center 30%/cover no-repeat;
+  opacity:0.15;
+}
+.cta::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(160deg,rgba(200,75,49,0.85),rgba(163,61,39,0.92));
 }
 .cta-content{position:relative;z-index:2}
 .cta h2{
