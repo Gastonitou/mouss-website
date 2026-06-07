@@ -242,29 +242,6 @@ nav .menu-btn{display:none;background:none;border:none;font-size:24px;cursor:poi
   background:var(--warm);color:var(--brand);
 }
 
-/* ============ GALERIE ============ */
-.gallery-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:12px;
-}
-.gallery-grid .gal-item{
-  aspect-ratio:4/3;border-radius:12px;overflow:hidden;
-  background:var(--warm);
-  position:relative;
-}
-.gallery-grid .gal-item img{
-  width:100%;height:100%;object-fit:cover;
-  transition:transform 0.4s;
-}
-.gallery-grid .gal-item:hover img{transform:scale(1.05)}
-.gallery-grid .gal-label{position:absolute;bottom:8px;left:8px;background:rgba(0,0,0,0.5);backdrop-filter:blur(4px);padding:4px 10px;border-radius:6px;color:#fff;font-size:10px;font-weight:600;letter-spacing:0.5px}
-.gal-item .gal-placeholder{
-  width:100%;height:100%;display:flex;align-items:center;justify-content:center;
-  font-size:32px;color:rgba(45,36,36,0.1);
-  background:linear-gradient(135deg,var(--cream),var(--warm));
-}
-@media(max-width:640px){.gallery-grid{grid-template-columns:repeat(2,1fr)}}
 
 /* ============ KONTAKT ============ */
 .contact-section{
@@ -359,7 +336,6 @@ footer a{color:var(--gold);text-decoration:none}
   <div class="nav-links" id="navLinks">
     <a href="#about">Über uns</a>
     <a href="#menu">Speisekarte</a>
-    <a href="#gallery">Galerie</a>
     <a href="#instagram">Instagram</a>
     <a href="#contact">Kontakt</a>
     <a href="#contact" class="btn btn-small btn-primary" style="margin-left:4px">📍 Route</a>
@@ -490,33 +466,6 @@ footer a{color:var(--gold);text-decoration:none}
   </div>
 </section>
 
-<section class="section" id="gallery">
-  <div class="section-inner">
-    <div class="section-label fade-in">
-      <div class="line"></div><span>Galerie</span><div class="line"></div>
-    </div>
-    <div class="section-title fade-up">
-      <h2>Einblicke in Mouss</h2>
-      <p>So sieht marokkanische Gastfreundschaft aus</p>
-    </div>
-
-    <div class="gallery-grid">
-      <div class="gal-item fade-up">
-        <img src="mouss-assets/mouss_shop_ghassen.jpg" alt="Mouss — Eingang" loading="lazy" style="object-position:center 20%">
-        <div class="gal-label">🧿 Eingang</div>
-      </div>
-      <div class="gal-item fade-up">
-        <img src="mouss-assets/mouss_shop_2.jpg" alt="Mouss — Innen" loading="lazy" style="object-position:center 30%">
-        <div class="gal-label">🪑 Innen</div>
-      </div>
-      <div class="gal-item fade-up">
-        <img src="mouss-assets/mouss_shop_3.jpg" alt="Mouss — Interior" loading="lazy" style="object-position:center 25%">
-        <div class="gal-label">☕ Atmosphäre</div>
-      </div>
-    </div>
-    <p style="text-align:center;margin-top:16px;color:var(--text);font-size:13px">📸 Nur deine echten Fotos — keine Stock-Bilder! Schick gern mehr 🤳</p>
-  </div>
-</section>
 
 <section class="section contact-section" id="contact">
   <div class="section-inner">
@@ -611,7 +560,7 @@ document.querySelectorAll('.fade-up,.fade-in,.scale-in').forEach(el=>observer.ob
 
 // Stagger menu cards
 document.querySelectorAll('.menu-card').forEach((c,i)=>{c.style.transitionDelay=(i*0.05)+'s'})
-document.querySelectorAll('.gal-item').forEach((c,i)=>{c.style.transitionDelay=(i*0.06)+'s'})
+
 </script>
 
 </body>
