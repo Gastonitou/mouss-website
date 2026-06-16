@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
 <title>Mouss — Moroccan Coffee Corner · Amsterdam</title>
 <meta name="description" content="Mouss – Marokkanische Snacks, Mint-Tee &amp; orientalische Spezialitäten in Amsterdam.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍵</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'></text></svg>">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
@@ -37,7 +37,7 @@ nav .menu-btn{display:none;background:none;border:none;font-size:24px;cursor:poi
 .hero::before{content:'';position:absolute;inset:0;background:url('mouss-assets/mouss_shop_ghassen.jpg') center 20%/cover no-repeat;opacity:0.35}
 .hero::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(200,75,49,0.15) 0%,transparent 60%),radial-gradient(ellipse at 70% 30%,rgba(212,168,75,0.1) 0%,transparent 50%)}
 .hero-content{position:relative;z-index:2;text-align:center;padding:0 24px;max-width:700px}
-.hero-ornament{font-size:48px;margin-bottom:8px;opacity:0.6}
+.hero-ornament{margin-bottom:8px;opacity:0.6;display:flex;justify-content:center}
 .hero-badge{display:inline-block;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.08);padding:6px 18px;border-radius:50px;color:var(--gold);font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px;backdrop-filter:blur(8px)}
 .hero h1{font-family:'Playfair Display',serif;font-size:clamp(56px,14vw,120px);font-weight:900;color:#fff;line-height:1;margin-bottom:4px;letter-spacing:-3px}
 .hero h1 .accent{color:var(--gold)}
@@ -85,7 +85,7 @@ nav .menu-btn{display:none;background:none;border:none;font-size:24px;cursor:poi
 .menu-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--brand),var(--gold));opacity:0;transition:opacity 0.3s}
 .menu-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(200,75,49,0.06)}
 .menu-card:hover::before{opacity:1}
-.menu-card .mc-icon{font-size:40px;margin-bottom:6px;line-height:1}
+.menu-card .mc-icon{margin-bottom:6px;display:flex;justify-content:center}
 .menu-card h4{font-size:18px;font-weight:700;margin-bottom:2px;color:var(--dark)}
 .menu-card .mc-desc{font-size:13px;color:var(--text);line-height:1.6;margin-bottom:8px}
 .menu-card .mc-footer{display:flex;justify-content:space-between;align-items:center}
@@ -146,7 +146,7 @@ footer a{color:var(--gold);text-decoration:none}
     <a href="#about" data-tr="nav.about">Über uns</a>
     <a href="#menu" data-tr="nav.menu">Speisekarte</a>
     <a href="#contact" data-tr="nav.contact">Kontakt</a>
-    <a href="#contact" class="btn btn-small btn-outline" style="color:var(--dark);border-color:rgba(45,36,36,0.15)" data-tr="nav.route">📍 Route</a>
+    <a href="#contact" class="btn btn-small btn-outline" style="color:var(--dark);border-color:rgba(45,36,36,0.15)" data-tr="nav.route"> Route</a>
     <div class="lang-switch">
       <button class="lang-btn active" onclick="switchLang('de')">DE</button>
       <button class="lang-btn" onclick="switchLang('en')">EN</button>
@@ -158,14 +158,14 @@ footer a{color:var(--gold);text-decoration:none}
 
 <section class="hero">
   <div class="hero-content">
-    <div class="hero-ornament">🍵</div>
+    <div class="hero-ornament"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></div>
     <div class="hero-badge" data-tr="hero.badge">✦ Seit 1990 in Amsterdam</div>
     <div class="subtitle" data-tr="hero.subtitle">Moroccan Coffee Corner</div>
     <h1>M<span class="accent">o</span>uss</h1>
     <p data-tr="hero.desc">Marokkanische Snacks, frischer Mint-Tee und orientalische Spezialitäten — kleine Gerichte, große marokkanische Gastfreundschaft mitten in Amsterdam.</p>
     <div class="hero-actions">
-      <a href="#menu" class="btn btn-primary" data-tr="hero.cta_menu">🍽 Speisekarte</a>
-      <a href="#contact" class="btn btn-outline" data-tr="hero.cta_visit">📍 Besuch uns</a>
+      <a href="#menu" class="btn btn-primary" data-tr="hero.cta_menu"> Speisekarte</a>
+      <a href="#contact" class="btn btn-outline" data-tr="hero.cta_visit"> Besuch uns</a>
     </div>
   </div>
   <div class="scroll-hint" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
@@ -185,7 +185,7 @@ footer a{color:var(--gold);text-decoration:none}
     </div>
     <div class="about">
       <div class="about-text fade-up">
-        <h3 data-tr="about.heading">🇲🇦 Ein Stück Marokko in Amsterdam</h3>
+        <h3 data-tr="about.heading">Ein Stück Marokko in Amsterdam</h3>
         <p data-tr="about.p1"><strong>Mouss</strong> wurde mit einer einzigen Vision gegründet: die warme, herzliche Gastfreundschaft Marokkos nach Amsterdam zu bringen. Jedes Gericht erzählt eine Geschichte — von traditionellen Familienrezepten, frischen Zutaten und der Liebe zur marokkanischen Küche.</p>
         <p data-tr="about.p2">Von knusprigen <strong>Briouats</strong> über duftenden <strong>Couscous</strong> bis zum perfekt zubereiteten <strong>Mint-Tee</strong> — bei uns schmeckt man die Leidenschaft.</p>
         <div class="highlight">
@@ -194,7 +194,7 @@ footer a{color:var(--gold);text-decoration:none}
       </div>
       <div class="about-visual fade-up">
         <img src="mouss-assets/mouss_shop_ghassen.jpg" alt="Mouss" loading="lazy" style="object-fit:cover;object-position:center 15%">
-        <div class="overlay">🇲🇦 Mouss · Nieuwezijds Voorburgwal 88, Amsterdam</div>
+        <div class="overlay"> Mouss · Nieuwezijds Voorburgwal 88, Amsterdam</div>
       </div>
     </div>
   </div>
@@ -212,7 +212,7 @@ footer a{color:var(--gold);text-decoration:none}
 
     <div class="menu-grid">
       <div class="menu-card scale-in">
-        <div class="mc-icon">🥟</div>
+        <div class="mc-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
         <h4 data-tr="menu.briouats.name">Briouats</h4>
         <div class="mc-desc" data-tr="menu.briouats.desc">Knusprige marokkanische Teigtaschen mit Huhn, Mandeln oder Käse — goldbraun frittiert, außen knusprig, innen zart.</div>
         <div class="mc-footer">
@@ -222,7 +222,7 @@ footer a{color:var(--gold);text-decoration:none}
       </div>
 
       <div class="menu-card scale-in">
-        <div class="mc-icon">🥘</div>
+        <div class="mc-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
         <h4>Couscous</h4>
         <div class="mc-desc" data-tr="menu.couscous.desc">Dampfgegarter Grieß mit saisonalem Gemüse, Kichererbsen und zartem Lamm oder Huhn — serviert mit würziger Brühe.</div>
         <div class="mc-footer">
@@ -232,7 +232,7 @@ footer a{color:var(--gold);text-decoration:none}
       </div>
 
       <div class="menu-card scale-in">
-        <div class="mc-icon">🌯</div>
+        <div class="mc-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3l18 18M9 3h6l3 5-6 8-6-8 3-5z"/></svg></div>
         <h4 data-tr="menu.merguez.name">Merguez Baguette</h4>
         <div class="mc-desc" data-tr="menu.merguez.desc">Würzige Lamm-Rind Merguez-Würstchen im frischen Baguette mit selbstgemachter Harissa-Sauce und gegrilltem Gemüse.</div>
         <div class="mc-footer">
@@ -242,7 +242,7 @@ footer a{color:var(--gold);text-decoration:none}
       </div>
 
       <div class="menu-card scale-in">
-        <div class="mc-icon">🥞</div>
+        <div class="mc-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="8" rx="10" ry="4"/><path d="M2 8c0 2.2 4.5 4 10 4s10-1.8 10-4"/><path d="M2 12c0 2.2 4.5 4 10 4s10-1.8 10-4"/></svg></div>
         <h4 data-tr="menu.msemen.name">Msemen</h4>
         <div class="mc-desc" data-tr="menu.msemen.desc">Marokkanische Pfannenkuchen, mehrfach gefaltet und goldbraun gebacken — gefüllt mit Honig, Butter oder Käse.</div>
         <div class="mc-footer">
@@ -252,7 +252,7 @@ footer a{color:var(--gold);text-decoration:none}
       </div>
 
       <div class="menu-card scale-in">
-        <div class="mc-icon">🥮</div>
+        <div class="mc-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l2 2"/></svg></div>
         <h4 data-tr="menu.baklava.name">Ghoriba &amp; Baklava</h4>
         <div class="mc-desc" data-tr="menu.baklava.desc">Orientalisches Gebäck (3 Stück): buttrige Ghoriba-Kekse und süße Baklava mit Pistazien &amp; Honig.</div>
         <div class="mc-footer">
@@ -262,12 +262,12 @@ footer a{color:var(--gold);text-decoration:none}
       </div>
 
       <div class="menu-card scale-in">
-        <div class="mc-icon">🍵</div>
+        <div class="mc-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="2" x2="6" y2="5"/><line x1="10" y1="2" x2="10" y2="5"/><line x1="14" y1="2" x2="14" y2="5"/></svg></div>
         <h4 data-tr="menu.mint.name">Marokkanischer Mint-Tee</h4>
         <div class="mc-desc" data-tr="menu.mint.desc">Grüner Tee mit frischer Minze, leicht gesüßt — traditionell aus großer Höhe eingeschenkt. Das Nationalgetränk Marokkos.</div>
         <div class="mc-footer">
           <div class="mc-price">2,80 <small>€</small></div>
-          <div class="mc-tag" data-tr="menu.mint.tag">🇲🇦 Signature</div>
+          <div class="mc-tag" data-tr="menu.mint.tag"> Signature</div>
         </div>
       </div>
     </div>
@@ -281,17 +281,17 @@ footer a{color:var(--gold);text-decoration:none}
     </div>
     <div class="section-title fade-up">
       <h2 data-tr="contact.title">Besuch uns</h2>
-      <p data-tr="contact.subtitle">Komm vorbei für einen Mint-Tee oder einen Snack 🇲🇦</p>
+      <p data-tr="contact.subtitle">Komm vorbei für einen Mint-Tee oder einen Snack </p>
     </div>
 
     <div class="contact-grid">
       <div class="contact-card fade-up">
-        <h4>📍 Mouss — Moroccan Coffee Corner</h4>
-        <div class="info-row"><span class="icon">📍</span><span class="val">Nieuwezijds Voorburgwal 88<br>1012 SE Amsterdam, Nederland</span></div>
-        <div class="info-row"><span class="icon">🕐</span><span class="val" data-tr="contact.hours">Mo–Fr: 09:00–20:00 · Za: 10:00–18:00 · So: Ruhetag</span></div>
-        <div class="info-row"><span class="icon">📞</span><span class="val" data-tr="contact.phone">[Telefonnummer]</span></div>
-        <div class="info-row"><span class="icon">📷</span><span class="val"><a href="https://instagram.com/mouss.nl" target="_blank" style="color:var(--gold);text-decoration:none">@mouss.nl</a></span></div>
-        <div class="info-row"><span class="icon">💰</span><span class="val" data-tr="contact.price">€1–€10 · Zum Mitnehmen &amp; Vor Ort</span></div>
+        <h4>Mouss — Moroccan Coffee Corner</h4>
+        <div class="info-row"><span class="icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><span class="val">Nieuwezijds Voorburgwal 88<br>1012 SE Amsterdam, Nederland</span></div>
+        <div class="info-row"><span class="icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span><span class="val" data-tr="contact.hours">Mo–Fr: 09:00–20:00 · Za: 10:00–18:00 · So: Ruhetag</span></div>
+        <div class="info-row"><span class="icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><span class="val" data-tr="contact.phone">[Telefonnummer]</span></div>
+        <div class="info-row"><span class="icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></span><span class="val"><a href="https://instagram.com/mouss.nl" target="_blank" style="color:var(--gold);text-decoration:none">@mouss.nl</a></span></div>
+        <div class="info-row"><span class="icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span><span class="val" data-tr="contact.price">€1–€10 · Zum Mitnehmen &amp; Vor Ort</span></div>
       </div>
       <div class="contact-map fade-up">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.131!2d4.8926328!3d52.3759151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609b611a54455%3A0x39711cf44ea0b5e1!2sMouss%20Moroccan%20Coffeecorner!5e0!3m2!1snl!2snl!4v1!5m2!1snl!2snl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -325,7 +325,7 @@ footer a{color:var(--gold);text-decoration:none}
       <div class="gal-item fade-up"><img src="mouss-assets/insta/insta_10.jpg" alt="Free Tea Friday" loading="lazy"></div>
       <div class="gal-item fade-up"><img src="mouss-assets/insta/mouss_ghassen_4.jpg" alt="Mouss — Foto" loading="lazy"></div>
     </div>
-    <p style="text-align:center;margin-top:16px;color:var(--text);font-size:13px">📸 Fotos von <a href="https://instagram.com/mouss.nl" target="_blank" style="color:var(--brand);text-decoration:none;font-weight:600">@mouss.nl</a> auf Instagram</p>
+    <p style="text-align:center;margin-top:16px;color:var(--text);font-size:13px"> Fotos von <a href="https://instagram.com/mouss.nl" target="_blank" style="color:var(--brand);text-decoration:none;font-weight:600">@mouss.nl</a> auf Instagram</p>
   </div>
 </section>
 
@@ -333,7 +333,7 @@ footer a{color:var(--gold);text-decoration:none}
   <div class="section-inner">
     <div>
       <a href="https://instagram.com/mouss.nl" target="_blank" class="btn btn-primary" style="background:linear-gradient(135deg,#833AB4,#FD1D1D);color:#fff;font-size:16px;padding:16px 36px">
-        📷 @mouss.nl folgen
+         @mouss.nl folgen
       </a>
     </div>
   </div>
@@ -343,14 +343,14 @@ footer a{color:var(--gold);text-decoration:none}
   <div class="cta-content">
     <h2 data-tr="cta.title">Lust auf marokkanische Küche?</h2>
     <p data-tr="cta.subtitle">Komm vorbei — wir freuen uns auf dich!</p>
-    <a href="https://maps.app.goo.gl/DPEpKyujFknZPaW66" target="_blank" class="btn btn-primary" style="background:#fff;color:var(--brand-dark)" data-tr="cta.btn">📍 Route bei Google Maps</a>
+    <a href="https://maps.app.goo.gl/DPEpKyujFknZPaW66" target="_blank" class="btn btn-primary" style="background:#fff;color:var(--brand-dark)" data-tr="cta.btn"> Route bei Google Maps</a>
   </div>
 </section>
 
 <footer>
   © 2026 Mouss — Moroccan Coffee Corner · Amsterdam<br>
-  <span data-tr="footer.made">🇲🇦 Mit 💛 gemacht</span><br>
-  <a href="https://instagram.com/mouss.nl" target="_blank">📷 @mouss.nl</a> ·
+  <span data-tr="footer.made"> Mit Leidenschaft gemacht</span><br>
+  <a href="https://instagram.com/mouss.nl" target="_blank">@mouss.nl</a> ·
   <a href="https://gastonitou.github.io/mouss-website/">mouss-website</a>
 </footer>
 
@@ -360,17 +360,17 @@ const t = {
     'nav.about': 'Über uns',
     'nav.menu': 'Speisekarte',
     'nav.contact': 'Kontakt',
-    'nav.route': '📍 Route',
+    'nav.route': ' Route',
     'hero.badge': '✦ Seit 1990 in Amsterdam',
     'hero.subtitle': 'Moroccan Coffee Corner',
     'hero.desc': 'Marokkanische Snacks, frischer Mint-Tee und orientalische Spezialitäten — kleine Gerichte, große marokkanische Gastfreundschaft mitten in Amsterdam.',
-    'hero.cta_menu': '🍽 Speisekarte',
-    'hero.cta_visit': '📍 Besuch uns',
+    'hero.cta_menu': ' Speisekarte',
+    'hero.cta_visit': ' Besuch uns',
     'hero.scroll': 'Entdecken',
     'about.label': 'Über uns',
     'about.title': 'Marokkanische Gastfreundschaft<br>seit Generationen',
     'about.subtitle': 'Bei Mouss treffen orientalische Tradition und Streetfood-Kultur aufeinander',
-    'about.heading': '🇲🇦 Ein Stück Marokko in Amsterdam',
+    'about.heading': 'Ein Stück Marokko in Amsterdam',
     'about.p1': '<strong>Mouss</strong> wurde mit einer einzigen Vision gegründet: die warme, herzliche Gastfreundschaft Marokkos nach Amsterdam zu bringen. Jedes Gericht erzählt eine Geschichte — von traditionellen Familienrezepten, frischen Zutaten und der Liebe zur marokkanischen Küche.',
     'about.p2': 'Von knusprigen <strong>Briouats</strong> über duftenden <strong>Couscous</strong> bis zum perfekt zubereiteten <strong>Mint-Tee</strong> — bei uns schmeckt man die Leidenschaft.',
     'about.highlight': '⟶ Alle Gerichte werden täglich frisch zubereitet. <strong>Zum Mitnehmen</strong> oder <strong>Vor Ort genießen</strong> — ganz wie du magst.',
@@ -393,38 +393,38 @@ const t = {
     'menu.baklava.tag': 'Süß',
     'menu.mint.name': 'Marokkanischer Mint-Tee',
     'menu.mint.desc': 'Grüner Tee mit frischer Minze, leicht gesüßt — traditionell aus großer Höhe eingeschenkt. Das Nationalgetränk Marokkos.',
-    'menu.mint.tag': '🇲🇦 Signature',
+    'menu.mint.tag': ' Signature',
     'contact.label': 'Kontakt',
     'contact.title': 'Besuch uns',
-    'contact.subtitle': 'Komm vorbei für einen Mint-Tee oder einen Snack 🇲🇦',
+    'contact.subtitle': 'Komm vorbei für einen Mint-Tee oder einen Snack ',
     'contact.hours': 'Mo–Fr: 09:00–20:00 · Sa: 10:00–18:00 · So: Ruhetag',
     'contact.phone': '[Telefonnummer]',
     'contact.price': '€1–€10 · Zum Mitnehmen & Vor Ort',
     'insta.title': 'Folge uns auf Instagram',
-    'insta.subtitle': 'Bleib auf dem Laufenden über neue Gerichte, Aktionen und mehr 🇲🇦',
+    'insta.subtitle': 'Bleib auf dem Laufenden über neue Gerichte, Aktionen und mehr ',
     'gallery.label': 'Galerie',
     'gallery.title': 'Einblicke in Mouss',
     'gallery.subtitle': 'Fotos von @mouss.nl — Inspiration aus der marokkanischen Küche',
     'cta.title': 'Lust auf marokkanische Küche?',
     'cta.subtitle': 'Komm vorbei — wir freuen uns auf dich!',
-    'cta.btn': '📍 Route bei Google Maps',
-    'footer.made': '🇲🇦 Mit 💛 gemacht',
+    'cta.btn': ' Route bei Google Maps',
+    'footer.made': 'Mit Leidenschaft gemacht',
   },
   en: {
     'nav.about': 'About Us',
     'nav.menu': 'Menu',
     'nav.contact': 'Contact',
-    'nav.route': '📍 Route',
+    'nav.route': ' Route',
     'hero.badge': '✦ Since 1990 in Amsterdam',
     'hero.subtitle': 'Moroccan Coffee Corner',
     'hero.desc': 'Moroccan snacks, fresh mint tea and oriental specialties — small dishes, big Moroccan hospitality in the heart of Amsterdam.',
-    'hero.cta_menu': '🍽 View Menu',
-    'hero.cta_visit': '📍 Visit Us',
+    'hero.cta_menu': ' View Menu',
+    'hero.cta_visit': ' Visit Us',
     'hero.scroll': 'Explore',
     'about.label': 'About Us',
     'about.title': 'Moroccan Hospitality<br>Since Generations',
     'about.subtitle': 'Where oriental tradition meets street food culture',
-    'about.heading': '🇲🇦 A Piece of Morocco in Amsterdam',
+    'about.heading': 'A Piece of Morocco in Amsterdam',
     'about.p1': '<strong>Mouss</strong> was founded with a single vision: to bring the warm, heartfelt hospitality of Morocco to Amsterdam. Every dish tells a story — of traditional family recipes, fresh ingredients, and a love for Moroccan cuisine.',
     'about.p2': 'From crispy <strong>Briouats</strong> to fragrant <strong>Couscous</strong> and perfectly brewed <strong>Mint Tea</strong> — you can taste the passion.',
     'about.highlight': '⟶ All dishes are freshly prepared daily. <strong>Takeaway</strong> or <strong>Dine-in</strong> — whatever you prefer.',
@@ -447,38 +447,38 @@ const t = {
     'menu.baklava.tag': 'Sweet',
     'menu.mint.name': 'Moroccan Mint Tea',
     'menu.mint.desc': 'Green tea with fresh mint, lightly sweetened — traditionally poured from height. The national drink of Morocco.',
-    'menu.mint.tag': '🇲🇦 Signature',
+    'menu.mint.tag': ' Signature',
     'contact.label': 'Contact',
     'contact.title': 'Visit Us',
-    'contact.subtitle': 'Come by for a mint tea or a snack 🇲🇦',
+    'contact.subtitle': 'Come by for a mint tea or a snack ',
     'contact.hours': 'Mon–Fri: 09:00–20:00 · Sat: 10:00–18:00 · Sun: Closed',
     'contact.phone': '[Phone number]',
     'contact.price': '€1–€10 · Takeaway & Dine-in',
     'insta.title': 'Follow us on Instagram',
-    'insta.subtitle': 'Stay updated on new dishes, specials and more 🇲🇦',
+    'insta.subtitle': 'Stay updated on new dishes, specials and more ',
     'gallery.label': 'Gallery',
     'gallery.title': 'Inside Mouss',
     'gallery.subtitle': 'Photos from @mouss.nl — inspiration from Moroccan cuisine',
     'cta.title': 'Craving Moroccan cuisine?',
     'cta.subtitle': 'Come by — we look forward to seeing you!',
-    'cta.btn': '📍 Directions on Google Maps',
-    'footer.made': '🇲🇦 Made with 💛',
+    'cta.btn': ' Directions on Google Maps',
+    'footer.made': 'Made with love',
   },
   nl: {
     'nav.about': 'Over ons',
     'nav.menu': 'Menu',
     'nav.contact': 'Contact',
-    'nav.route': '📍 Route',
+    'nav.route': ' Route',
     'hero.badge': '✦ Sinds 1990 in Amsterdam',
     'hero.subtitle': 'Moroccan Coffee Corner',
     'hero.desc': 'Marokkaanse snacks, verse muntthee en oosterse specialiteiten — kleine gerechten, grote Marokkaanse gastvrijheid in het hart van Amsterdam.',
-    'hero.cta_menu': '🍽 Bekijk menu',
-    'hero.cta_visit': '📍 Bezoek ons',
+    'hero.cta_menu': ' Bekijk menu',
+    'hero.cta_visit': ' Bezoek ons',
     'hero.scroll': 'Ontdekken',
     'about.label': 'Over ons',
     'about.title': 'Marokkaanse Gastvrijheid<br>Sinds Generaties',
     'about.subtitle': 'Waar oosterse traditie en streetfood-cultuur samenkomen',
-    'about.heading': '🇲🇦 Een stukje Marokko in Amsterdam',
+    'about.heading': 'Een stukje Marokko in Amsterdam',
     'about.p1': '<strong>Mouss</strong> is opgericht met één visie: de warme, hartelijke gastvrijheid van Marokko naar Amsterdam brengen. Elk gerecht vertelt een verhaal — van traditionele familierecepten, verse ingrediënten en liefde voor de Marokkaanse keuken.',
     'about.p2': 'Van knapperige <strong>Briouats</strong> tot geurige <strong>Couscous</strong> en perfect gezette <strong>Muntthee</strong> — bij ons proef je de passie.',
     'about.highlight': '⟶ Alle gerechten worden dagelijks vers bereid. <strong>Afhalen</strong> of <strong>Ter plaatse eten</strong> — helemaal zoals jij wilt.',
@@ -501,22 +501,22 @@ const t = {
     'menu.baklava.tag': 'Zoet',
     'menu.mint.name': 'Marokkaanse Muntthee',
     'menu.mint.desc': 'Groene thee met verse munt, licht gezoet — traditioneel van hoogte geschonken. De nationale drank van Marokko.',
-    'menu.mint.tag': '🇲🇦 Signature',
+    'menu.mint.tag': ' Signature',
     'contact.label': 'Contact',
     'contact.title': 'Bezoek ons',
-    'contact.subtitle': 'Kom langs voor een muntthee of een snack 🇲🇦',
+    'contact.subtitle': 'Kom langs voor een muntthee of een snack ',
     'contact.hours': 'Ma–Vr: 09:00–20:00 · Za: 10:00–18:00 · Zo: Gesloten',
     'contact.phone': '[Telefoonnummer]',
     'contact.price': '€1–€10 · Afhalen & Ter plaatse',
     'insta.title': 'Volg ons op Instagram',
-    'insta.subtitle': 'Blijf op de hoogte van nieuwe gerechten, acties en meer 🇲🇦',
+    'insta.subtitle': 'Blijf op de hoogte van nieuwe gerechten, acties en meer ',
     'gallery.label': 'Galerij',
     'gallery.title': 'Binnenkijk bij Mouss',
     'gallery.subtitle': 'Fotos van @mouss.nl — inspiratie uit de Marokkaanse keuken',
     'cta.title': 'Zin in Marokkaanse keuken?',
     'cta.subtitle': 'Kom langs — we kijken ernaar uit je te zien!',
-    'cta.btn': '📍 Route via Google Maps',
-    'footer.made': '🇲🇦 Gemaakt met 💛',
+    'cta.btn': ' Route via Google Maps',
+    'footer.made': 'Gemaakt met liefde',
   }
 };
 
